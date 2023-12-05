@@ -1,3 +1,8 @@
+package Day01
+
+import println
+import readInput
+
 enum class Digit(val stringName: String, val intValue: Int) {
   ONE("one", 1),
   TWO("two", 2),
@@ -52,19 +57,19 @@ fun main() {
   }
 
   // test if implementation meets criteria from the description, like:
-  val testInput = readInput("Day01_test")
+  val testInput = readInput("Day01/Day01_test")
   println(part1(testInput))
   check(part1(testInput) == 142)
 
   println()
 
-  val testInput2 = readInput("Day01_test2")
+  val testInput2 = readInput("Day01/Day01_test2")
   println(part2(testInput2))
   check(part2(testInput2) == 281)
 
   println()
 
-  val input = readInput("Day01")
+  val input = readInput("Day01/Day01")
   part1(input).println()
   part2(input).println()
 }
